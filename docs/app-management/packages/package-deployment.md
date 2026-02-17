@@ -20,7 +20,7 @@ RealmJoin or Intune will automatically install the application. These applicatio
 {% tab title="RealmJoin" %}
 The application will appear in the RealmJoin Agent tray and will require the user to initiate the download and installation manually.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Intune" %}
@@ -40,7 +40,7 @@ RealmJoin or Intune will uninstall the package from the assigned users and devic
 
 ### Update
 
-Additionally, RealmJoin provides an Update group that is created on demand. The Update group will automatically onboard loose installations of a software title into management.
+Additionally, RealmJoin provides an Update group that is created on demand. The Update group will automatically onboard loose installations of a software title into management. Devices will be removed from the group when the update is not required anymore. The group management is solely done by the RealmJoin portal and shall not be modified manually.
 
 Click [**Enable update group**](package-deployment.md#enable-additional-and-restore-default-groups) and a new Entra ID Group with the suffix "(update)" will be created. Software installations will be also assigned to this group. RealmJoin dynamically discovers installed copies of the software that are unmanaged and adds the devices to the group.
 
@@ -84,7 +84,7 @@ Users and devices should only be in one RealmJoin managed group at any given tim
 
 Users and devices can easily be moved across groups using the Managed users function.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Selecting Main, Preview, Available and Uninstall will add the user to the chosen group and remove the user from all other groups relevant to the package.
 
@@ -96,6 +96,6 @@ Basic packages do not have any associated Microsoft Entra groups. You will have 
 
 Groups, devices and users that are assigned to a Basic package will be assigned as Available by default and can be changed using the \[change settings] button.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
