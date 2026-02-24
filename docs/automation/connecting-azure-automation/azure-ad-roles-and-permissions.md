@@ -18,11 +18,11 @@ The shared runbooks available on [GitHub](https://github.com/realmjoin/realmjoin
 | `Az.Compute` | 5.1.1 |
 | `Az.DesktopVirtualization` | 5.4.1 |
 | `Az.ManagementPartner` | Not specified |
-| `Az.Resources` | Not specified |
-| `Az.Storage` | Not specified |
-| `ExchangeOnlineManagement` | 3.9.0 |
-| `Microsoft.Graph.Authentication` | 2.34.0 |
-| `MicrosoftTeams` | 7.5.0 |
+| `Az.Resources` | 9.0.1 |
+| `Az.Storage` | 9.6.0 |
+| `ExchangeOnlineManagement` | 3.9.2 |
+| `Microsoft.Graph.Authentication` | 2.35.1 |
+| `MicrosoftTeams` | 7.6.0 |
 | `RealmJoin.RunbookHelper` | 0.8.5 |
 
 
