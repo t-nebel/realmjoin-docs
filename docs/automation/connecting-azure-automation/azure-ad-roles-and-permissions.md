@@ -14,7 +14,7 @@ The shared runbooks available on [GitHub](https://github.com/realmjoin/realmjoin
 
 | Module | Minimum version in runbooks |
 |---|---|
-| `Az.Accounts` | 5.1.1 |
+| `Az.Accounts` | 5.3.2 |
 | `Az.Compute` | 5.1.1 |
 | `Az.DesktopVirtualization` | 5.4.1 |
 | `Az.ManagementPartner` | Not specified |
