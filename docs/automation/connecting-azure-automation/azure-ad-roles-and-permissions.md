@@ -55,6 +55,7 @@ Please grant the following Graph API-Permissions to the managed identity
 * `Application.Read.All`
 * `Application.ReadWrite.OwnedBy`
 * `AuditLog.Read.All`
+* `BitLockerKey.Read.All`
 * `BitlockerKey.Read.All`
 * `CloudPC.ReadWrite.All`
 * `Device.ReadWrite.All`
