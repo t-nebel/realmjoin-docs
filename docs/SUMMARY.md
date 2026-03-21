@@ -174,6 +174,7 @@
       * [Security](automation/runbooks/runbook-references/org/security/README.md)
         * [Add Defender Indicator](automation/runbooks/runbook-references/org/security/add-defender-indicator.md)
         * [Backup Conditional Access Policies](automation/runbooks/runbook-references/org/security/backup-conditional-access-policies.md)
+        * [Find Sms Auth Phone Number](automation/runbooks/runbook-references/org/security/find-sms-auth-phone-number.md)
         * [List Admin Users](automation/runbooks/runbook-references/org/security/list-admin-users.md)
         * [List Expiring Role Assignments](automation/runbooks/runbook-references/org/security/list-expiring-role-assignments.md)
         * [List Inactive Devices](automation/runbooks/runbook-references/org/security/list-inactive-devices.md)

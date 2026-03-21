@@ -148,6 +148,7 @@ Also the document for each runbook contains information about permissions, where
 - [Security](org/README.md#org-security)
   - [Add Defender Indicator](org/security/add-defender-indicator.md)
   - [Backup Conditional Access Policies](org/security/backup-conditional-access-policies.md)
+  - [Find SMS Auth Phone Number](org/security/find-sms-auth-phone-number.md)
   - [List Admin Users](org/security/list-admin-users.md)
   - [List Expiring Role Assignments](org/security/list-expiring-role-assignments.md)
   - [List Inactive Devices](org/security/list-inactive-devices.md)
