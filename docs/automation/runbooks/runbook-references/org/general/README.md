@@ -42,6 +42,7 @@ On this overview page you can find all Organization Runbooks in the General subc
 - [Report License Assignment (Scheduled)](report-license-assignment_scheduled.md)
 - [Report Pim Activations (Scheduled)](report-pim-activations_scheduled.md)
 - [Sync All Devices](sync-all-devices.md)
+- [Sync Apple Tokens](sync-apple-tokens.md)
 
 [Back to Runbook Reference overview](../../README.md)
 
