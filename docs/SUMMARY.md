@@ -68,6 +68,7 @@
         * [Restart Host](automation/runbooks/runbook-references/device/avd/restart-host.md)
         * [Toggle Drain Mode](automation/runbooks/runbook-references/device/avd/toggle-drain-mode.md)
       * [General](automation/runbooks/runbook-references/device/general/README.md)
+        * [Assign Groups By Template](automation/runbooks/runbook-references/device/general/assign-groups-by-template.md)
         * [Change Grouptag](automation/runbooks/runbook-references/device/general/change-grouptag.md)
         * [Check Device Compliance](automation/runbooks/runbook-references/device/general/check-device-compliance.md)
         * [Check Updatable Assets](automation/runbooks/runbook-references/device/general/check-updatable-assets.md)

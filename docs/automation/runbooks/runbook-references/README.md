@@ -38,6 +38,7 @@ Also the document for each runbook contains information about permissions, where
   - [Restart Host](device/avd/restart-host.md)
   - [Toggle Drain Mode](device/avd/toggle-drain-mode.md)
 - [General](device/README.md#device-general)
+  - [Assign Groups By Template](device/general/assign-groups-by-template.md)
   - [Change Grouptag](device/general/change-grouptag.md)
   - [Check Device Compliance](device/general/check-device-compliance.md)
   - [Check Updatable Assets](device/general/check-updatable-assets.md)
