@@ -30,6 +30,7 @@ Here you can find all Device Runbooks along with the available subcategories.
   - [Reset Mobile Device Pin](security/reset-mobile-device-pin.md)
   - [Restrict Or Release Code Execution](security/restrict-or-release-code-execution.md)
   - [Show Bitlocker Recovery Key](security/show-bitlocker-recovery-key.md)
+  - [Show Filevault Recovery Key](security/show-filevault-recovery-key.md)
   - [Show Laps Password](security/show-laps-password.md)
 
 
