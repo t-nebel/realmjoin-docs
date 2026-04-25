@@ -1,5 +1,18 @@
 # RealmJoin Runbooks Changelog
 
+## 2026-04-24
+
+- Update **Export Policy Report** Runbook in Org/General
+  - Replace all `$top=1000` Graph API calls with `Get-GraphPagedResult` to correctly handle pagination and prevent missing policies in large tenants
+  - Add helper function and restructure script with proper regions
+  - Add logging of the count of retrieved policies for each policy type
+
+## 2026-04-21
+
+- Update **Enroll Updatable Assets** Runbook in Device/General
+  - Add "All" option to `UpdateCategory` to sequentially enroll into Driver, Feature and Quality updates
+  - Restructure script with proper regions and parameter logging
+
 ## 2026-04-13
 
 - Update **Set Or Remove Mobile Phone MFA** Runbook in User/Security
