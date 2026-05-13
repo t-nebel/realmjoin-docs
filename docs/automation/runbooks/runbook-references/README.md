@@ -206,6 +206,7 @@ Also the document for each runbook contains information about permissions, where
   - [Confirm Or Dismiss Risky User](user/security/confirm-or-dismiss-risky-user.md)
   - [Create Temporary Access Pass](user/security/create-temporary-access-pass.md)
   - [Enable Or Disable Password Expiration](user/security/enable-or-disable-password-expiration.md)
+  - [List MFA Methods](user/security/list-mfa-methods.md)
   - [Reset Mfa](user/security/reset-mfa.md)
   - [Reset Password](user/security/reset-password.md)
   - [Revoke Or Restore Access](user/security/revoke-or-restore-access.md)
