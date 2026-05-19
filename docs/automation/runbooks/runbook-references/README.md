@@ -193,6 +193,7 @@ Also the document for each runbook contains information about permissions, where
   - [Hide Or Unhide In Addressbook](user/mail/hide-or-unhide-in-addressbook.md)
   - [List Mailbox Permissions](user/mail/list-mailbox-permissions.md)
   - [List Room Mailbox Configuration](user/mail/list-room-mailbox-configuration.md)
+  - [Manage Archive Mailbox](user/mail/manage-archive-mailbox.md)
   - [Remove Mailbox](user/mail/remove-mailbox.md)
   - [Set Out Of Office](user/mail/set-out-of-office.md)
   - [Set Room Mailbox Configuration](user/mail/set-room-mailbox-configuration.md)

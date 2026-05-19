@@ -1,5 +1,12 @@
 # RealmJoin Runbooks Changelog
 
+## 2026-05-15
+
+- Add **Manage Archive Mailbox** Runbook to User/Mail
+  - Enables, disables, or retrieves the current status of the in-place archive mailbox for an Exchange Online user
+  - When enabling, automatically reconnects a soft-deleted archive mailbox (within 30 days) instead of creating a new one
+  - Disable action includes a note that the archive can be recovered within 30 days
+
 ## 2026-05-13
 
 - Update **Report Apple MDM Cert Expiry (Scheduled)** Runbook in Org/General

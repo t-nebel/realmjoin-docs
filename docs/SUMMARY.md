@@ -217,6 +217,7 @@
         * [Hide Or Unhide In Addressbook](automation/runbooks/runbook-references/user/mail/hide-or-unhide-in-addressbook.md)
         * [List Mailbox Permissions](automation/runbooks/runbook-references/user/mail/list-mailbox-permissions.md)
         * [List Room Mailbox Configuration](automation/runbooks/runbook-references/user/mail/list-room-mailbox-configuration.md)
+        * [Manage Archive Mailbox](automation/runbooks/runbook-references/user/mail/manage-archive-mailbox.md)
         * [Remove Mailbox](automation/runbooks/runbook-references/user/mail/remove-mailbox.md)
         * [Set Out Of Office](automation/runbooks/runbook-references/user/mail/set-out-of-office.md)
         * [Set Room Mailbox Configuration](automation/runbooks/runbook-references/user/mail/set-room-mailbox-configuration.md)
