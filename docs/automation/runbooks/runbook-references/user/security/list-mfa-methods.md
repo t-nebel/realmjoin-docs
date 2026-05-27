@@ -89,6 +89,16 @@ Service Desk phone number for user contact information (optional). Sourced from 
 | Default Value |  |
 | Type | String |
 
+### LanguageOverride
+
+Overrides the language used for the notification email. Accepted values are 'DE' (German) or 'EN' (English). If left empty, the language is determined automatically based on the target user's usage location.
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value |  |
+| Type | String |
+
 
 
 [Back to Runbook Reference overview](../../README.md)
