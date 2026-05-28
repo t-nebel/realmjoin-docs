@@ -15,6 +15,7 @@ User → Security → Set Or Remove Mobile Phone Mfa
   - AuditLog.Read.All
   - User.Read.All
   - UserAuthenticationMethod.ReadWrite.All
+  - Mail.Send
 
 
 ## Parameters
@@ -47,6 +48,66 @@ Mobile phone number in international E.164 format (e.g., +491701234567).
 | Required | false |
 | Default Value | False |
 | Type | Boolean |
+
+### NotifyUser
+
+When enabled, sends a notification email to the target user informing them that their mobile phone MFA method was added or removed by an administrator. Default is disabled.
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value | False |
+| Type | Boolean |
+
+### EmailFrom
+
+Sender email address for the optional notification mail. Sourced from the RealmJoin tenant setting RJReport.EmailSender.
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value |  |
+| Type | String |
+
+### ServiceDeskDisplayName
+
+Service Desk display name for user contact information (optional). Sourced from the RealmJoin tenant setting RJReport.ServiceDesk_DisplayName.
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value |  |
+| Type | String |
+
+### ServiceDeskEmail
+
+Service Desk email address for user contact information (optional). Sourced from the RealmJoin tenant setting RJReport.ServiceDesk_EMail.
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value |  |
+| Type | String |
+
+### ServiceDeskPhone
+
+Service Desk phone number for user contact information (optional). Sourced from the RealmJoin tenant setting RJReport.ServiceDesk_Phone.
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value |  |
+| Type | String |
+
+### LanguageOverride
+
+Overrides the language used for the notification email. Accepted values are 'DE' (German) or 'EN' (English). If left empty, the language is determined automatically based on the target user's usage location.
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value |  |
+| Type | String |
 
 
 
