@@ -1,5 +1,17 @@
 # RealmJoin Runbooks Changelog
 
+## 2026-06-01
+
+- Bump `RealmJoin.RunbookHelper` to >= 0.8.6 in every Runbook that uses the module
+  - This module version ships an extensive update to the email-sending function around image embedding and Outlook Classic compatibility
+- Update **Export Enterprise Application Users** Runbook in Org/Applications
+  - Remove inline `Publish-RjRbFilesToStorageContainer` helper function — now provided by `RealmJoin.RunbookHelper` >= 0.8.6
+- Update **Office 365 License Report** Runbook in Org/General
+  - Remove inline `Publish-RjRbFilesToStorageContainer` helper function — now provided by `RealmJoin.RunbookHelper` >= 0.8.6
+- Update **Check Device Onboarding Exclusion (Scheduled)** Runbook in Org/General
+  - Fix `System.OutOfMemoryException` on tenants with large Intune inventories: managed devices are now filtered server-side instead of pulling the full inventory into memory and filtering client-side
+  - Migrate to native Microsoft Graph
+
 ## 2026-05-27
 
 - Update **Reset MFA** Runbook in User/Security
