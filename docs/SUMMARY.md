@@ -128,6 +128,7 @@
         * [Report Devices Without Primary User](automation/runbooks/runbook-references/org/devices/report-devices-without-primary-user.md)
         * [Report Stale Devices Scheduled](automation/runbooks/runbook-references/org/devices/report-stale-devices_scheduled.md)
         * [Report Users With More Than 5 Devices](automation/runbooks/runbook-references/org/devices/report-users-with-more-than-5-devices.md)
+        * [Report Windows Devices Without Autopilot](automation/runbooks/runbook-references/org/devices/report-windows-devices-without-autopilot.md)
         * [Sync Device Serialnumbers To Entraid Scheduled](automation/runbooks/runbook-references/org/devices/sync-device-serialnumbers-to-entraid_scheduled.md)
       * [General](automation/runbooks/runbook-references/org/general/README.md)
         * [Add Devices Of Users To Group Scheduled](automation/runbooks/runbook-references/org/general/add-devices-of-users-to-group_scheduled.md)

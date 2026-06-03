@@ -102,6 +102,7 @@ Also the document for each runbook contains information about permissions, where
   - [Report Devices Without Primary User](org/devices/report-devices-without-primary-user.md)
   - [Report Stale Devices (Scheduled)](org/devices/report-stale-devices_scheduled.md)
   - [Report Users With More Than 5-Devices](org/devices/report-users-with-more-than-5-devices.md)
+  - [Report Windows Devices Without Autopilot](org/devices/report-windows-devices-without-autopilot.md)
   - [Sync Device Serialnumbers To Entraid (Scheduled)](org/devices/sync-device-serialnumbers-to-entraid_scheduled.md)
 - [General](org/README.md#org-general)
   - [Add Devices Of Users To Group (Scheduled)](org/general/add-devices-of-users-to-group_scheduled.md)
