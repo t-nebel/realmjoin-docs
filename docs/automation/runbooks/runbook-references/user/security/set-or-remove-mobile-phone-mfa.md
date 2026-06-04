@@ -1,5 +1,5 @@
 ---
-title: Set Or Remove Mobile Phone Mfa
+title: Set Or Remove Mobile Phone MFA
 description: Set or remove a user's mobile phone MFA method
 ---
 
@@ -7,7 +7,7 @@ description: Set or remove a user's mobile phone MFA method
 Adds, updates, or removes the user's mobile phone authentication method. This runbook manages phone numbers as regular MFA factors (call/text verification). Important: The Microsoft Graph phoneMethods API does not offer a way to add a phone number as "MFA only" without triggering an automatic SMS Sign-In registration attempt. If the user is enabled by the tenant's Authentication Methods Policy for SMS Sign-In, Graph will automatically try to register the number for SMS Sign-In after creating or updating the phone method. If the number is already used by another user for SMS Sign-In, Graph returns a 409 Conflict with error code "phoneNumberNotUnique". However, the phone method itself (for regular MFA) is typically created or updated successfully despite this error. The smsSignInState property is read-only and cannot be controlled via the create/update request. SMS Sign-In can only be explicitly managed via the separate enableSmsSignIn and disableSmsSignIn endpoints. This runbook verifies the actual state after such errors and reports success if the MFA method was assigned, with a warning about the SMS Sign-In conflict. If the assignment truly failed, it searches for the user holding the number.
 
 ## Location
-User → Security → Set Or Remove Mobile Phone Mfa
+User → Security → Set Or Remove Mobile Phone MFA
 
 ## Permissions
 ### Application permissions

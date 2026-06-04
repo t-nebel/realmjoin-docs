@@ -14,7 +14,7 @@ The shared runbooks available on [GitHub](https://github.com/realmjoin/realmjoin
 
 | Module | Minimum version in runbooks |
 |---|---|
-| `Az.Accounts` | 5.3.4 |
+| `Az.Accounts` | 5.5.0 |
 | `Az.Compute` | 5.1.1 |
 | `Az.DesktopVirtualization` | 5.4.1 |
 | `Az.ManagementPartner` | 0.7.5 |
@@ -56,6 +56,8 @@ Please grant the following Graph API-Permissions to the managed identity
 * `Application.ReadWrite.OwnedBy`
 * `AuditLog.Read.All`
 * `BitlockerKey.Read.All`
+* `Channel.ReadBasic.All`
+* `ChannelMember.ReadWrite.All`
 * `CloudPC.ReadWrite.All`
 * `Device.ReadWrite.All`
 * `DeviceLocalCredential.Read.All`
