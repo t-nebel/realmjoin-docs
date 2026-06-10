@@ -119,6 +119,7 @@
         * [Add Autopilot Device](automation/runbooks/runbook-references/org/devices/add-autopilot-device.md)
         * [Add Device Via Corporate Identifier](automation/runbooks/runbook-references/org/devices/add-device-via-corporate-identifier.md)
         * [Auto Approve Driver Updates Scheduled](automation/runbooks/runbook-references/org/devices/auto-approve-driver-updates_scheduled.md)
+        * [Cleanup Autopilot Devices Scheduled](automation/runbooks/runbook-references/org/devices/cleanup-autopilot-devices_scheduled.md)
         * [Create Endpoint Analytics Baseline](automation/runbooks/runbook-references/org/devices/create-endpoint-analytics-baseline.md)
         * [Dedup Device Names Scheduled](automation/runbooks/runbook-references/org/devices/dedup-device-names_scheduled.md)
         * [Delete Stale Devices Scheduled](automation/runbooks/runbook-references/org/devices/delete-stale-devices_scheduled.md)
