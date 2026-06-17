@@ -172,6 +172,7 @@
       * [Mail](automation/runbooks/runbook-references/org/mail/README.md)
         * [Add Distribution List](automation/runbooks/runbook-references/org/mail/add-distribution-list.md)
         * [Add Equipment Mailbox](automation/runbooks/runbook-references/org/mail/add-equipment-mailbox.md)
+        * [Add Mail Contact](automation/runbooks/runbook-references/org/mail/add-mail-contact.md)
         * [Add Or Remove Public Folder](automation/runbooks/runbook-references/org/mail/add-or-remove-public-folder.md)
         * [Add Or Remove Teams Mailcontact](automation/runbooks/runbook-references/org/mail/add-or-remove-teams-mailcontact.md)
         * [Add Or Remove Tenant Allow Block List](automation/runbooks/runbook-references/org/mail/add-or-remove-tenant-allow-block-list.md)

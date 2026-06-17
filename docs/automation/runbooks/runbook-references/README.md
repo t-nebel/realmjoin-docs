@@ -146,6 +146,7 @@ Also the document for each runbook contains information about permissions, where
 - [Mail](org/README.md#org-mail)
   - [Add Distribution List](org/mail/add-distribution-list.md)
   - [Add Equipment Mailbox](org/mail/add-equipment-mailbox.md)
+  - [Add Mail Contact](org/mail/add-mail-contact.md)
   - [Add Or Remove Public Folder](org/mail/add-or-remove-public-folder.md)
   - [Add Or Remove Teams Mailcontact](org/mail/add-or-remove-teams-mailcontact.md)
   - [Add Or Remove Tenant Allow Block List](org/mail/add-or-remove-tenant-allow-block-list.md)
