@@ -50,6 +50,7 @@ Also the document for each runbook contains information about permissions, where
   - [Unenroll Updatable Assets](device/general/unenroll-updatable-assets.md)
   - [Wipe Device](device/general/wipe-device.md)
 - [Security](device/README.md#device-security)
+  - [Check Defender Status](device/security/check-defender-status.md)
   - [Enable Or Disable Device](device/security/enable-or-disable-device.md)
   - [Isolate Or Release Device](device/security/isolate-or-release-device.md)
   - [Reset Mobile Device Pin](device/security/reset-mobile-device-pin.md)

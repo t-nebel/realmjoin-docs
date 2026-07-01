@@ -80,6 +80,7 @@
         * [Unenroll Updatable Assets](automation/runbooks/runbook-references/device/general/unenroll-updatable-assets.md)
         * [Wipe Device](automation/runbooks/runbook-references/device/general/wipe-device.md)
       * [Security](automation/runbooks/runbook-references/device/security/README.md)
+        * [Check Defender Status](automation/runbooks/runbook-references/device/security/check-defender-status.md)
         * [Enable Or Disable Device](automation/runbooks/runbook-references/device/security/enable-or-disable-device.md)
         * [Isolate Or Release Device](automation/runbooks/runbook-references/device/security/isolate-or-release-device.md)
         * [Reset Mobile Device Pin](automation/runbooks/runbook-references/device/security/reset-mobile-device-pin.md)
