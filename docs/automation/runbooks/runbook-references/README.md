@@ -84,7 +84,9 @@ Also the document for each runbook contains information about permissions, where
 
 - [Applications](org/README.md#org-applications)
   - [Add Application Registration](org/applications/add-application-registration.md)
+  - [Add Gsa Application Registration](org/applications/add-gsa-application-registration.md)
   - [Delete Application Registration](org/applications/delete-application-registration.md)
+  - [Delete Gsa Application Registration](org/applications/delete-gsa-application-registration.md)
   - [Export Enterprise Application Users](org/applications/export-enterprise-application-users.md)
   - [List Inactive Enterprise Applications](org/applications/list-inactive-enterprise-applications.md)
   - [Report Application Registration](org/applications/report-application-registration.md)
