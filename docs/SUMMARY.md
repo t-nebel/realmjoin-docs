@@ -171,6 +171,7 @@
         * [Report Pim Activations Scheduled](automation/runbooks/runbook-references/org/general/report-pim-activations_scheduled.md)
         * [Sync All Devices](automation/runbooks/runbook-references/org/general/sync-all-devices.md)
         * [Sync Apple Tokens](automation/runbooks/runbook-references/org/general/sync-apple-tokens.md)
+        * [Sync Channel Or Group Members Scheduled](automation/runbooks/runbook-references/org/general/sync-channel-or-group-members_scheduled.md)
         * [Sync Shared Channel Owners Scheduled](automation/runbooks/runbook-references/org/general/sync-shared-channel-owners_scheduled.md)
       * [Mail](automation/runbooks/runbook-references/org/mail/README.md)
         * [Add Distribution List](automation/runbooks/runbook-references/org/mail/add-distribution-list.md)

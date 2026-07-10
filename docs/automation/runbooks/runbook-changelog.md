@@ -1,7 +1,21 @@
 # RealmJoin Runbooks Changelog
 
+## 2026-07-09
+
+- Update **Wipe Device** Runbook in Device/General
+  - Add optional `addToExclusionGroup` switch that adds the (Windows) device to the compliance exclusion group (`exclusionGroupName`), granting it a longer compliance grace period after it is re-enrolled via Autopilot (aligns with the **Check Device Onboarding Exclusion** runbook)
+  - Add an optional `exclusionGroupId` parameter (hidden by default) that, when set, always overrides `exclusionGroupName` to avoid display-name conflicts;
+  - The exclusion group is resolved and validated in an upfront preflight check, so the runbook aborts before any destructive action (wipe/delete/disable) if the group is missing, avoiding a "half-baked" device state
+  - The device is added before any EntraID object deletion; the operation is skipped for non-Windows devices, when the device is being deleted from EntraID, or when it is already a member of the group
+  - Add the `GroupMember.ReadWrite.All` Graph permission
+
 ## 2026-07-08
 
+- Add **Sync Channel Or Group Members** Runbook in Org/General
+  - Scheduled runbook that mirrors membership in one direction: shared channel members into a security group, group members into another group, or group members into a shared channel
+  - Adding missing members is always performed; removing members that only exist in the target is opt-in via `RemoveExtraMembers`
+  - Group sources are expanded transitively; guest handling (`IncludeGuests`) and removing channel members from the host team (`RemoveFromTeam`) are configurable, plus a `WhatIfMode` dry run
+  - Optional email report and time-limited download link (CSV of all changes) via the `RJReport.*` settings
 - Update **Wipe Device** Runbook in Device/General
   - The Microsoft Defender for Endpoint risk check (`skipWipeIfAtRisk`) now runs as an upfront preflight check before any device object or wipe operations are performed
   - When the device's risk score is Medium or High, the runbook aborts with a clearly visible warning banner and a distinct error message, protecting forensic data of devices potentially involved in a security incident

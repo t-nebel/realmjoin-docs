@@ -145,6 +145,7 @@ Also the document for each runbook contains information about permissions, where
   - [Report Pim Activations (Scheduled)](org/general/report-pim-activations_scheduled.md)
   - [Sync All Devices](org/general/sync-all-devices.md)
   - [Sync Apple Tokens](org/general/sync-apple-tokens.md)
+  - [Sync Channel Or Group Members (Scheduled)](org/general/sync-channel-or-group-members_scheduled.md)
   - [Sync Shared Channel Owners (Scheduled)](org/general/sync-shared-channel-owners_scheduled.md)
 - [Mail](org/README.md#org-mail)
   - [Add Distribution List](org/mail/add-distribution-list.md)
