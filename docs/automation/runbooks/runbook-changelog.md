@@ -1,5 +1,32 @@
 # RealmJoin Runbooks Changelog
 
+## 2026-07-15
+
+- Update **Report Devices Without Primary User (Scheduled)** Runbook in Org/Devices
+  - Add the device operating system to the report output, the CSV export and the email report
+  - Add platform filter parameters (`IncludeWindows`, `IncludeMacOS`, `IncludeIOS`, `IncludeAndroid`, `IncludeOther`) to limit the report to selected platforms; all platforms are included by default
+  - The selected platforms are listed in the runbook output and the email report
+  - Optimize the managed device query so only the required device properties are requested from Microsoft Graph
+  - Add an optional download link (`CreateDownloadLink`, disabled by default): the report CSV is uploaded to an Azure Storage Account and a time-limited download link is returned in the runbook output (uses the `RJReport.StorageAccount.*` settings)
+- Update **Report Users With More Than 5 Devices (Scheduled)** Runbook in Org/Devices
+  - Enhance the detailed CSV export: each device entry now includes the device display name
+  - Rename the `DeviceId` column to `DeviceObjectId` to clarify that it contains the Entra object ID, and add an `EntraIDDeviceID` column with the Entra ID device ID
+  - Add an `InIntune` column ("yes"/"no") to the detailed CSV export, indicating whether the device is also present in Intune as a managed device
+  - Add an `IntuneOnlyDevices` parameter (disabled by default) to limit the report to devices that are present in Intune; the `InIntune` column is omitted in this case and the report scope is noted in the email
+  - Add an optional download link (`CreateDownloadLink`, disabled by default): the summary and detail CSV files are uploaded to an Azure Storage Account and time-limited download links are returned in the runbook output (uses the `RJReport.StorageAccount.*` settings)
+- Enable the "Scheduled" option for the following runbooks in Org/Devices (files renamed with the `_scheduled` suffix):
+  - **Report Devices Without Primary User**
+  - **Report Users With More Than 5 Devices**
+  - **Report Windows Devices Without Autopilot**
+
+## 2026-07-10
+
+- Add **Wipe Managed App Data** Runbook in Device/General
+  - Performs an "App selective wipe" (MAM) for a device, mirroring the Intune portal flow *Apps > App selective wipe > Create wipe request* - removes company data from apps protected by app protection policies without wiping the whole device (typical use case: lost or stolen MAM-managed devices)
+  - Resolves the users registered on the device, matches their MAM app registrations against the device (via `azureADDeviceId`, with a device-name fallback for registrations without an EntraID device id) and creates a wipe request per affected user/device tag via `wipeManagedAppRegistrationsByDeviceTag`
+  - Wipe requests can be monitored/cancelled in the Intune portal under *Apps > App selective wipe*
+  - Requires the `DeviceManagementApps.ReadWrite.All`, `Device.Read.All` and `User.Read.All` Graph permissions
+
 ## 2026-07-09
 
 - Update **Wipe Device** Runbook in Device/General

@@ -1,5 +1,5 @@
 ---
-title: Report Windows Devices Without Autopilot
+title: Report Windows Devices Without Autopilot (Scheduled)
 description: Reports all Windows Entra devices that have no associated Windows Autopilot object.
 ---
 
@@ -50,7 +50,7 @@ See the [RealmJoin Report Settings documentation](https://docs.realmjoin.com/aut
 
 
 ## Location
-Organization → Devices → Report Windows Devices Without Autopilot
+Organization → Devices → Report Windows Devices Without Autopilot_Scheduled
 
 ## Permissions
 ### Application permissions

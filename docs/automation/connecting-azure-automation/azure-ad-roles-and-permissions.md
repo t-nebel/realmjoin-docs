@@ -45,6 +45,7 @@ Please assign the following Entra ID roles to the managed identity
 * Application Developer
 * Cloud Device Administrator
 * Exchange Administrator
+* Intune Administrator
 * Teams Administrator
 * User Administrator
 
