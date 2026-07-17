@@ -5,9 +5,11 @@ description: Report users with more than five registered devices
 
 ## Description
 This runbook queries Entra ID devices and their registered users to identify users with more than five devices.
-It outputs a summary table and can optionally send an email with CSV attachments.
-The detailed CSV export lists each device with its object ID, Entra ID device ID and display name, and indicates whether the device is also present in Intune as a managed device.
-The report CSV files can also be uploaded to an Azure Storage Account, returning time-limited download links.
+It outputs a summary table and can optionally send an email with the report attached as CSV files and/or as an Excel workbook (one worksheet for the summary, one for the details).
+The detailed export lists each device with its object ID, Entra ID device ID and display name, and indicates whether the device is also present in Intune as a managed device (highlighted green/red in the Excel workbook).
+The report files can also be uploaded to an Azure Storage Account, returning time-limited download links.
+The ReportFileFormat parameter controls which file formats are generated and delivered (CSV only, CSV & XLSX, or XLSX only).
+When the CSV attachments exceed the email size limit and "CSV & XLSX" is selected, the email falls back to the Excel workbook alone.
 
 ## Setup regarding email sending
 
@@ -41,9 +43,19 @@ Disabled by default.
 | Default Value | False |
 | Type | Boolean |
 
+### ReportFileFormat
+
+Controls which report file formats are generated and delivered: "CSV only", "CSV & XLSX" (default) or "XLSX only".
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value | CSV & XLSX |
+| Type | String |
+
 ### CreateDownloadLink
 
-If enabled, the report CSV files are uploaded to an Azure Storage Account and time-limited download links are returned. Disabled by default.
+If enabled, the report files are uploaded to an Azure Storage Account and time-limited download links are returned. Disabled by default.
 
 | Property | Value |
 | --- | --- |

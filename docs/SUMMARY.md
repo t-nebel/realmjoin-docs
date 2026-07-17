@@ -202,6 +202,7 @@
         * [Monitor Pending Epm Requests Scheduled](automation/runbooks/runbook-references/org/security/monitor-pending-epm-requests_scheduled.md)
         * [Notify Changed Ca Policies](automation/runbooks/runbook-references/org/security/notify-changed-ca-policies.md)
         * [Report Epm Elevation Requests Scheduled](automation/runbooks/runbook-references/org/security/report-epm-elevation-requests_scheduled.md)
+        * [Sync Mfa Secure Users To Group Scheduled](automation/runbooks/runbook-references/org/security/sync-mfa-secure-users-to-group_scheduled.md)
     * [User Runbooks](automation/runbooks/runbook-references/user/README.md)
       * [AVD](automation/runbooks/runbook-references/user/avd/README.md)
         * [User Signout](automation/runbooks/runbook-references/user/avd/user-signout.md)

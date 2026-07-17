@@ -91,7 +91,7 @@ Filter groups by writeback enablement.
 
 ### SendMail
 
-If enabled, the report is sent via email as a CSV attachment. Toggling this on reveals the recipient address field.
+If enabled, the report is sent via email with the selected report file format(s) attached. Toggling this on reveals the recipient address and report file format fields.
 
 | Property | Value |
 | --- | --- |
@@ -119,9 +119,19 @@ The sender email address. This needs to be configured in the runbook customizati
 | Default Value |  |
 | Type | String |
 
+### ReportFileFormat
+
+Controls which report file formats are generated and delivered: "CSV only", "CSV & XLSX" (default) or "XLSX only".
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value | CSV & XLSX |
+| Type | String |
+
 ### CreateDownloadLink
 
-If enabled, the report CSV is uploaded to an Azure Storage Account and a time-limited download link is returned in the output.
+If enabled, the report files (CSV and Excel) are uploaded to an Azure Storage Account and time-limited download links are returned in the output.
 
 | Property | Value |
 | --- | --- |

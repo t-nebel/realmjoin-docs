@@ -176,6 +176,7 @@ Also the document for each runbook contains information about permissions, where
   - [Monitor Pending EPM Requests (Scheduled)](org/security/monitor-pending-epm-requests_scheduled.md)
   - [Notify Changed CA Policies](org/security/notify-changed-ca-policies.md)
   - [Report EPM Elevation Requests (Scheduled)](org/security/report-epm-elevation-requests_scheduled.md)
+  - [Sync MFA Secure Users To Group (Scheduled)](org/security/sync-mfa-secure-users-to-group_scheduled.md)
 
 ### User Runbooks
 

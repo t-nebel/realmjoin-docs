@@ -5,6 +5,8 @@ description: List group ownerships for this user.
 
 ## Description
 Lists Entra ID groups where the specified user is an owner. Outputs the group names and IDs.
+The ReportFileFormat parameter controls which file formats are generated and delivered (CSV only, CSV & XLSX, or XLSX only).
+When the CSV attachment exceeds the email size limit and "CSV & XLSX" is selected, the email falls back to the Excel workbook alone.
 
 ## Location
 User → General → List Group Ownerships
@@ -31,7 +33,7 @@ User principal name of the target user.
 
 ### SendMail
 
-If enabled, the report is sent via email as a CSV attachment. Toggling this on reveals the recipient address field.
+If enabled, the report is sent via email with the selected report file format(s) attached. Toggling this on reveals the recipient address and report file format fields.
 
 | Property | Value |
 | --- | --- |
@@ -59,9 +61,19 @@ The sender email address. This needs to be configured in the runbook customizati
 | Default Value |  |
 | Type | String |
 
+### ReportFileFormat
+
+Controls which report file formats are generated and delivered: "CSV only", "CSV & XLSX" (default) or "XLSX only".
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value | CSV & XLSX |
+| Type | String |
+
 ### CreateDownloadLink
 
-If enabled, the report CSV is uploaded to an Azure Storage Account and a time-limited download link is returned in the output.
+If enabled, the report files (CSV and Excel) are uploaded to an Azure Storage Account and time-limited download links are returned in the output.
 
 | Property | Value |
 | --- | --- |

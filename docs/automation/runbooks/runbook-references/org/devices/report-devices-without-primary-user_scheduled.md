@@ -8,8 +8,10 @@ This script retrieves all managed devices from Intune, and filters out those wit
 The output is a formatted table showing Object ID, Device ID, Display Name, Operating System, and Last Sync Date/Time for each device without a primary user.
 The report can be limited to specific platforms (Windows, macOS, iOS/iPadOS, Android, Other) via boolean parameters. By default, all platforms are included.
 
-Optionally, the report can be sent via email with a CSV attachment containing detailed device information.
-The report CSV can also be uploaded to an Azure Storage Account, returning a time-limited download link.
+Optionally, the report can be sent via email with CSV and/or Excel (xlsx) attachments containing detailed device information.
+The report files can also be uploaded to an Azure Storage Account, returning time-limited download links.
+The ReportFileFormat parameter controls which file formats are generated and delivered (CSV only, CSV & XLSX, or XLSX only).
+When the CSV attachment exceeds the email size limit and "CSV & XLSX" is selected, the email falls back to the Excel workbook alone.
 
 ## Setup regarding email sending
 
@@ -81,9 +83,19 @@ Include devices with any other operating system (e.g. Linux, ChromeOS) in the re
 | Default Value | True |
 | Type | Boolean |
 
+### ReportFileFormat
+
+Controls which report file formats are generated and delivered: "CSV only", "CSV & XLSX" (default) or "XLSX only".
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value | CSV & XLSX |
+| Type | String |
+
 ### CreateDownloadLink
 
-If enabled, the report CSV is uploaded to an Azure Storage Account and a time-limited download link is returned. Disabled by default.
+If enabled, the report files are uploaded to an Azure Storage Account and time-limited download links are returned. Disabled by default.
 
 | Property | Value |
 | --- | --- |

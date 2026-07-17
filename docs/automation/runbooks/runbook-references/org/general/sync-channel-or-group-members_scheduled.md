@@ -11,7 +11,9 @@ or vice versa) and syncing group members into a Teams Shared Channel. Adding mis
 performed, while removing members that only exist in the target is optional and controlled by a
 parameter. Guest handling and whether channel removals also remove the host team membership are
 configurable, and the runbook can optionally send an email report and upload the results as a
-time-limited download link.
+time-limited download link. The ReportFileFormat parameter controls which report file formats are
+generated and delivered (CSV only, CSV & XLSX, or XLSX only). When the CSV attachment exceeds the
+email size limit and "CSV & XLSX" is selected, the email falls back to the Excel workbook alone.
 
 ## How it works
 
@@ -196,7 +198,8 @@ When enabled, the runbook only logs the changes it would make without writing an
 
 ### SendEmailReport
 
-When enabled, a RealmJoin-branded email report is sent via Send-RjReportEmail after the run.
+When enabled, a RealmJoin-branded email report is sent via Send-RjReportEmail after the run. Toggling
+this on reveals the recipient address and report file format fields.
 
 | Property | Value |
 | --- | --- |
@@ -224,9 +227,19 @@ Sender mailbox for the report. Bound to the org Setting RJReport.EmailSender.
 | Default Value |  |
 | Type | String |
 
+### ReportFileFormat
+
+Controls which report file formats are generated and delivered: "CSV only", "CSV & XLSX" (default) or "XLSX only".
+
+| Property | Value |
+| --- | --- |
+| Required | false |
+| Default Value | CSV & XLSX |
+| Type | String |
+
 ### CreateDownloadLink
 
-When enabled, the CSV report is uploaded to a storage account and a time-limited download link is
+When enabled, the report file(s) are uploaded to a storage account and time-limited download links are
 returned (and included in the email report if that is also enabled).
 
 | Property | Value |
