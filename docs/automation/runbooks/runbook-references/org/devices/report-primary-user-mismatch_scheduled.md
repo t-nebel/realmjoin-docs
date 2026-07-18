@@ -135,11 +135,11 @@ Exclude devices that are members of this Entra device group from the report. Req
 
 ### EmailTo
 
-Recipient email address (or multiple comma-separated addresses) that should receive the report.
+If specified, an email with the report will be sent to the provided address(es). Can be a single address or multiple comma-separated addresses.
 
 | Property | Value |
 | --- | --- |
-| Required | true |
+| Required | false |
 | Default Value |  |
 | Type | String |
 
